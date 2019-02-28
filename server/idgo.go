@@ -92,7 +92,7 @@ func (m *MySQLIdGenerator) getIdFromMySQL() (int64, error) {
 	return id, nil
 }
 
-//get current id
+//Current gets current id
 func (m *MySQLIdGenerator) Current() (int64, error) {
 	m.lock.Lock()
 	defer m.lock.Unlock()
